@@ -1,0 +1,37 @@
+{
+  "name": "my-app",
+  "type": "module",
+  "version": "2.0.0",
+  "sideEffects": false,
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro check && astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "lint": "foundry run eslint . --ext .js,.jsx,.ts,.tsx",
+    "lint:fix": "npm run lint -- --fix",
+    "lint:css": "foundry run stylelint '**/*.css'"
+  },
+  "dependencies": {
+    "@astrojs/check": "^0.7.0",
+    "@astrojs/react": "^3.4.0",
+    "@sumup/circuit-ui": "^8.8.4",
+    "@sumup/design-tokens": "^7.2.0",
+    "@sumup/icons": "^3.3.0",
+    "@sumup/intl": "^1.6.0",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.2.18",
+    "astro": "^4.9.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "typescript": "^5.4.5"
+  },
+  "devDependencies": {
+    "@sumup-oss/foundry": "^8.0.0",
+    "@sumup/eslint-plugin-circuit-ui": "^4.0.0",
+    "@sumup/stylelint-plugin-circuit-ui": "^2.0.0",
+    "prettier-plugin-astro": "^0.14.0",
+    "typescript": "^5.4.5"
+  }
+}
